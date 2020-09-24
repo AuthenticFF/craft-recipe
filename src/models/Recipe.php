@@ -431,9 +431,9 @@ class Recipe extends Model
                     }
 
                     // Convert imperial units to nice fractions
-                    if ($outputUnits === 'imperial') {
+                    //if ($outputUnits === 'imperial') {
                         $quantity = $this->convertToFractions($quantity);
-                    }
+                    //}
                     $ingredient .= $quantity;
 
                     if ($row['units']) {
